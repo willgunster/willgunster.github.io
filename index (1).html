@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Will Gunster | Sport Analytics Portfolio</title>
+<meta name="description" content="Will Gunster, Sport Analytics junior at Syracuse University (B.S. May 2028), seeking Summer 2027 internships in data and analytics and in sports business. Five 2026 research papers on small-league player ratings, the NBA draft, NBA Cup forecasting and late-game shooting, plus practice reports built from KINEXON tracking data for Syracuse Women’s Basketball.">
+<meta name="author" content="Will Gunster">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Will Gunster | Sport Analytics Portfolio">
+<meta property="og:description" content="Will Gunster, Sport Analytics junior at Syracuse University (B.S. May 2028), seeking Summer 2027 internships in data and analytics and in sports business. Five 2026 research papers on small-league player ratings, the NBA draft, NBA Cup forecasting and late-game shooting, plus practice reports built from KINEXON tracking data for Syracuse Women’s Basketball.">
+<link rel="canonical" href="https://willgunster.github.io/">
+<meta property="og:url" content="https://willgunster.github.io/">
+<meta property="og:image" content="https://willgunster.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d2240'/%3E%3Cline x1='6.5' y1='16' x2='25.5' y2='16' stroke='%23ff7a33' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='18.5' cy='16' r='4.6' fill='%23ff7a33'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+:root{
+  /* Layout: the reference look Will picked. Bold condensed name, stat strip, a featured research card
+     with a chart panel, card grid, archive rows, experience cards, navy callout, skills boxes. */
+  --bg:#f7f8fa; --surface:#ffffff; --surface2:#eef1f5; --ink:#101828; --muted:#5b6b82; --line:#d9dfe8;
+  --navy:#0d2240; --orange:#d84a08; --orange-ink:#c2410c; --orange-soft:#fff1e8; --orange-band:#f6bf9f;
+  --mark2:#8b9ab0; --band2:#d3dbe6; --mark3:#2f5aa6; --band3:#bfcde8;
+  --btn-bg:#0d2240; --btn-fg:#ffffff; --callout-bg:#0d2240; --callout-ink:#ffffff; --callout-muted:#dbe6f3;
+  --radius:14px;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1220; --surface:#121e33; --surface2:#1a2a45; --ink:#eef2f7; --muted:#a8b6c8; --line:#2a3a56;
+    --navy:#eaf0f8; --orange:#ff7a33; --orange-ink:#ff8a4c; --orange-soft:#2b1e12; --orange-band:#7d3a17;
+    --mark2:#8796ad; --band2:#33466a; --mark3:#7ea6ec; --band3:#2d4672;
+    --btn-bg:#ff7a33; --btn-fg:#111111; --callout-bg:#16294a; --callout-ink:#ffffff; --callout-muted:#dbe6f3;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1220; --surface:#121e33; --surface2:#1a2a45; --ink:#eef2f7; --muted:#a8b6c8; --line:#2a3a56;
+  --navy:#eaf0f8; --orange:#ff7a33; --orange-ink:#ff8a4c; --orange-soft:#2b1e12; --orange-band:#7d3a17;
+  --mark2:#8796ad; --band2:#33466a; --mark3:#7ea6ec; --band3:#2d4672;
+  --btn-bg:#ff7a33; --btn-fg:#111111; --callout-bg:#16294a; --callout-ink:#ffffff; --callout-muted:#dbe6f3;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55;font-size:16px}
+img{max-width:100%}
+a{color:var(--orange-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:4px}
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hidden{display:none!important}
+.nw{white-space:nowrap}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* header */
+header.top{padding-block:36px 8px}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-ink);font-weight:600}
+h1{font-family:var(--display);font-size:clamp(3rem,9vw,5.2rem);line-height:.92;letter-spacing:.01em;margin:.08em 0 .12em;text-transform:uppercase;color:var(--ink);font-weight:700}
+h1 span{color:var(--orange)}
+.lede{font-size:1.18rem;max-width:720px;color:var(--ink);margin:.4em 0 0}
+.lede strong{font-weight:700}
+.lede.sub{font-size:1.05rem;color:var(--muted);margin-top:.6em}
+.lede.sub strong{color:var(--ink)}
+.meta-line{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0;color:var(--muted);font-size:.98rem}
+.meta-line b{color:var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn.primary{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}
+.btn:hover{text-decoration:none;filter:brightness(1.06)}
+.stat-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px 0 6px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.stat .num{font-family:var(--display);font-size:2rem;line-height:1;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .lab{font-size:.86rem;color:var(--muted);margin-top:5px;line-height:1.35}
+@media(max-width:720px){.stat-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* sections */
+section{padding-block:34px 6px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.sec-head h2{font-family:var(--display);font-size:1.9rem;letter-spacing:.02em;text-transform:uppercase;margin:0;font-weight:700;line-height:1.1}
+.sec-head p{margin:0;color:var(--muted);font-size:.92rem;text-align:right;max-width:380px}
+@media(max-width:640px){.sec-head{flex-direction:column;gap:6px}.sec-head p{text-align:left}}
+p.intro{color:var(--muted);max-width:760px;margin:0 0 16px}
+
+/* research cards */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 13px;border-radius:999px;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media(max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.featured{grid-column:1/-1}
+@media(min-width:761px){.card.featured{flex-direction:row;gap:28px}.card.featured .main{flex:1.2;display:flex;flex-direction:column;gap:12px;min-width:0}.card.featured .side{flex:1;border-left:1px solid var(--line);padding-left:24px;min-width:0}}
+@media(max-width:760px){.card.featured .main{display:flex;flex-direction:column;gap:12px}.card.featured .side{border-top:1px solid var(--line);padding-top:16px}}
+.kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:var(--orange-ink);font-weight:600}
+.card h3{font-size:1.42rem;line-height:1.2;margin:0;font-weight:700}
+.card h3 a{color:var(--ink)}
+.card h3 a:hover{color:var(--orange-ink);text-decoration:none}
+.card p{margin:0;color:var(--muted)}
+.card p b,.card p strong{color:var(--ink)}
+.finding{background:var(--surface2);border-radius:10px;padding:13px 14px;font-size:.96rem}
+.finding b{color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.78rem;font-weight:600;background:var(--orange-soft);color:var(--orange-ink);padding:4px 9px;border-radius:999px}
+.tag.alt{background:var(--surface2);color:var(--muted)}
+.card footer{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.read-link{font-weight:700}
+.note{font-size:.84rem;color:var(--muted)}
+
+/* interval charts, drawn in the reference's bar-row style */
+.ci{margin:0}
+.ci figcaption{margin:0 0 12px;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);line-height:1.35}
+.ci-row{margin-bottom:13px;--mark:var(--mark2);--band:var(--band2)}
+.ci-row.hl{--mark:var(--orange);--band:var(--orange-band)}
+.ci-row.navy{--mark:var(--mark3);--band:var(--band3)}
+.ci-row .bl{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px;font-size:.86rem;margin-bottom:6px}
+.ci-row .bl b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.ci-row .bl em{font-style:normal;font-weight:500;color:var(--muted);margin-left:3px}
+.ci-track{position:relative;height:10px;background:var(--surface2);border-radius:99px}
+.ci-track::before{content:"";position:absolute;left:var(--zero);top:-4px;bottom:-4px;width:2px;margin-left:-1px;border-radius:1px;background:var(--ink);opacity:.45}
+.ci.nozero .ci-track::before{display:none}
+.ci-band{position:absolute;top:0;bottom:0;border-radius:99px;background:var(--band)}
+.ci-dot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--mark);box-shadow:0 0 0 2px var(--surface)}
+.ci-axis{position:relative;height:18px;margin:2px 0 10px;font-size:.74rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.ci-axis span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.ci-axis span.first{transform:none}
+.ci-axis span.last{transform:translateX(-100%)}
+.ci .note{margin:0}
+.card:not(.featured) .ci{border-top:1px solid var(--line);padding-top:14px}
+
+/* archive rows */
+.archive{display:flex;flex-direction:column;gap:12px}
+.row-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:start}
+@media(max-width:640px){.row-card{grid-template-columns:minmax(0,1fr)}.row-card .btn{justify-self:start}}
+.row-card h3{margin:0 0 6px;font-size:1.18rem;line-height:1.25}
+.row-card p{margin:0 0 10px;color:var(--muted)}
+.row-card p b{color:var(--ink)}
+
+/* callout */
+.callout{background:var(--callout-bg);color:var(--callout-ink);border-radius:16px;padding:24px;margin-top:18px}
+.callout h3{margin:0 0 8px;font-size:1.25rem;color:var(--callout-ink)}
+.callout p{margin:0 0 10px;color:var(--callout-muted);max-width:780px}
+.callout p:last-child{margin-bottom:0}
+
+/* practice reports */
+.report{margin:0}
+.report .shot{display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.report img{display:block;width:100%;height:auto}
+.report figcaption{display:flex;flex-direction:column;gap:6px}
+
+/* experience */
+.exp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media(max-width:760px){.exp{grid-template-columns:minmax(0,1fr)}}
+.exp-item{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:19px}
+@media(min-width:761px){.exp .exp-item:last-child:nth-child(odd){grid-column:1/-1}}
+.exp-item .when{font-family:var(--mono);font-size:.8rem;color:var(--orange-ink);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.exp-item h3{margin:6px 0 4px;font-size:1.12rem;line-height:1.25}
+.exp-item .org{font-weight:600;color:var(--muted);font-size:.95rem}
+.exp-item p{color:var(--muted);margin:8px 0 0;font-size:.96rem}
+.contact h3{margin-top:0}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media(max-width:1000px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.skills{grid-template-columns:minmax(0,1fr)}}
+.skill-box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.skill-box h3{margin:0 0 10px;font-size:1rem}
+.skill-box ul{margin:0;padding-left:18px;color:var(--muted)}
+.skill-box li{margin:4px 0}
+
+footer.site{padding-block:36px 44px;color:var(--muted);font-size:.92rem}
+footer.site .wrap{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+footer.site strong{color:var(--ink)}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://willgunster.github.io/#will",
+   "name": "Will Gunster",
+   "alternateName": "William Gunster",
+   "description": "Sport Analytics junior at Syracuse University's David B. Falk College of Sport, B.S. expected May 2028, minor in Applications of AI. Seeking Summer 2027 internships in data and analytics and in sports business.",
+   "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Syracuse University"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/william-gunster/"
+   ],
+   "knowsAbout": [
+    "Sport analytics",
+    "Basketball analytics",
+    "NBA draft modeling",
+    "Python",
+    "R",
+    "SQL",
+    "Machine learning",
+    "Predictive modeling",
+    "Walk-forward validation",
+    "Bootstrap inference",
+    "Shrinkage estimation",
+    "Monte Carlo simulation",
+    "KINEXON player tracking",
+    "Tableau"
+   ],
+   "url": "https://willgunster.github.io/"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "Rating Players from Small Leagues: A Walk-Forward Test on the Belize Domestic League, 2024–26",
+   "name": "Rating Players from Small Leagues: A Walk-Forward Test on the Belize Domestic League, 2024–26",
+   "author": {
+    "@id": "https://willgunster.github.io/#will"
+   },
+   "datePublished": "2026-08",
+   "dateModified": "2026-10-22",
+   "inLanguage": "en",
+   "abstract": "Places box-score lines from the Belize domestic league, FIBA youth and regional tournaments and Spain's third division on an estimated NCAA Division I-equivalent BPM scale and shrinks short seasons toward a prior. In a walk-forward test on 102 player-seasons the shrunk rating predicted next season with RMSE 2.24 vs 3.35 for raw prior-season averages; against the average of covered players the gain was not distinguishable from zero.",
+   "url": "https://willgunster.github.io/gunster-small-league-player-ratings.pdf",
+   "encodingFormat": "application/pdf",
+   "numberOfPages": 12
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "Does College Development Predict NBA Value? A Pre-Registered Walk-Forward Test on the 2014–21 Draft Classes",
+   "name": "Does College Development Predict NBA Value? A Pre-Registered Walk-Forward Test on the 2014–21 Draft Classes",
+   "author": {
+    "@id": "https://willgunster.github.io/#will"
+   },
+   "datePublished": "2026-10",
+   "dateModified": "2026-10-22",
+   "inLanguage": "en",
+   "abstract": "A specification frozen on August 10, 2026, before any NBA outcome was joined, tested whether season-to-season college development adds to final-season statistics and the consensus big board in predicting 4-year regular-season VORP for the 2014-21 draft classes. Neither model met the pre-registered bar, and the consensus board alone ranked prospects as well as the best model.",
+   "url": "https://willgunster.github.io/gunster-college-development-nba-value.pdf",
+   "encodingFormat": "application/pdf",
+   "numberOfPages": 10
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "How Predictable Is NBA Cup Group Play? A Rules-Exact Simulator, a 2023–25 Backtest, and Two Studies of Early-Season Margins",
+   "name": "How Predictable Is NBA Cup Group Play? A Rules-Exact Simulator, a 2023–25 Backtest, and Two Studies of Early-Season Margins",
+   "author": {
+    "@id": "https://willgunster.github.io/#will"
+   },
+   "datePublished": "2026-10",
+   "dateModified": "2026-10-23",
+   "inLanguage": "en",
+   "abstract": "A simulator that turns preseason win-total priors into team ratings and plays out every NBA Cup group under the official rules, reproducing 2023-25 placements exactly. In a walk-forward backtest of 18 groups its group-winner forecasts tied the pre-tournament market consensus (log loss 1.359 vs 1.370) and beat a uniform guess. A 2026 forecast was frozen on October 14, 2026.",
+   "url": "https://willgunster.github.io/gunster-nba-cup-group-play.pdf",
+   "encodingFormat": "application/pdf",
+   "numberOfPages": 11
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "What Separates Top-10 Picks? Public Pre-Draft Information and the NBA Draft, 2008–2025",
+   "name": "What Separates Top-10 Picks? Public Pre-Draft Information and the NBA Draft, 2008–2025",
+   "author": {
+    "@id": "https://willgunster.github.io/#will"
+   },
+   "datePublished": "2026-10",
+   "dateModified": "2026-10-22",
+   "inLanguage": "en",
+   "abstract": "Among 1,073 players drafted from 2008 to 2025, a logistic regression on public pre-draft information separates top-10 picks from picks 11-60 with an AUC of 0.865 under leave-one-draft-out scoring; age carries the most information. Once a post-combine mock draft is known, the model adds nothing measurable.",
+   "url": "https://willgunster.github.io/gunster-top-10-picks.pdf",
+   "encodingFormat": "application/pdf",
+   "numberOfPages": 9
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "How Much Late-Game Shooting Carries Over? Shot Volume, Accuracy and Free Throws in NBA Play-by-Play, 2012–26",
+   "name": "How Much Late-Game Shooting Carries Over? Shot Volume, Accuracy and Free Throws in NBA Play-by-Play, 2012–26",
+   "author": {
+    "@id": "https://willgunster.github.io/#will"
+   },
+   "datePublished": "2026-10",
+   "dateModified": "2026-10-23",
+   "inLanguage": "en",
+   "abstract": "Using win-probability leverage splits for 2012-13 to 2025-26 and play-by-play for 13,508 games, late-game shot volume measured against role carries over modestly (r = 0.29), late-game accuracy shows no detectable carryover, and free-throw percentage in high-leverage moments runs 1.20 points below each shooter's own normal rate.",
+   "url": "https://willgunster.github.io/gunster-late-game-shooting.pdf",
+   "encodingFormat": "application/pdf",
+   "numberOfPages": 12
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="eyebrow">Syracuse University · Falk College of Sport · Class of 2028</div>
+  <h1>Will <span>Gunster</span></h1>
+  <p class="lede">Sport Analytics junior at Syracuse University’s David B. Falk College of Sport, B.S. expected May 2028, minor in Applications of AI. <strong>Seeking Summer 2027 internships in data and analytics and in sports business.</strong></p>
+  <p class="lede sub">I’ve been an analytics intern for <strong>Syracuse Women’s Basketball</strong> and a sports data science intern at <strong>Big League Advantage</strong>. My research uses public data on the NBA draft, player ratings in small leagues, NBA Cup forecasting and late-game shooting.</p>
+  <div class="meta-line">
+    <span><b>Focus:</b> Player evaluation, draft and tournament forecasting</span>
+    <span><b>Tools:</b> Python · R · SQL · Tableau · KINEXON</span>
+    <span><b>Experience:</b> Syracuse Women’s Basketball · Big League Advantage</span>
+  </div>
+  <nav class="actions" aria-label="Page sections">
+    <a class="btn primary" href="#research">Read the research ↓</a>
+    <a class="btn" href="#reports">Practice reports</a>
+    <a class="btn" href="#experience">Experience</a>
+    <a class="btn" href="#skills">Skills and coursework</a>
+    <a class="btn" href="https://www.linkedin.com/in/william-gunster/" target="_blank" rel="me noopener">LinkedIn ↗</a>
+  </nav>
+  <div class="stat-strip" aria-label="Portfolio at a glance">
+    <div class="stat"><div class="num">5</div><div class="lab">Research papers from 2026, each revised after an October data check</div></div>
+    <div class="stat"><div class="num">60 / 60</div><div class="lab">Official NBA Cup group placements reproduced by the simulator, <span class="nw">2023–25</span></div></div>
+    <div class="stat"><div class="num">1,073</div><div class="lab">Drafted players in the top-10 pick study, 2008–25</div></div>
+    <div class="stat"><div class="num">13,508</div><div class="lab">NBA games of play-by-play in the late-game shooting study</div></div>
+  </div>
+</header>
+
+<main>
+
+<section id="research" aria-labelledby="research-h">
+  <div class="sec-head"><h2 id="research-h">Featured research</h2><p>Every card links to the full paper. Each paper states its data, the test it used and its limits.</p></div>
+  <div class="filters" role="group" aria-label="Filter research by topic">
+    <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="chip" data-filter="evaluation" aria-pressed="false">Player evaluation</button>
+    <button type="button" class="chip" data-filter="draft" aria-pressed="false">NBA Draft</button>
+    <button type="button" class="chip" data-filter="forecast" aria-pressed="false">Forecasting</button>
+    <button type="button" class="chip" data-filter="ingame" aria-pressed="false">In-game</button>
+  </div>
+
+  <div class="grid">
+    <article class="card featured" id="small-leagues" data-cat="evaluation">
+      <div class="main">
+        <div class="kicker">Featured · Player evaluation · Aug 2026, rev. Oct 22, 2026</div>
+        <h3><a href="gunster-small-league-player-ratings.pdf" target="_blank" rel="noopener">Rating Players from Small Leagues: A Walk-Forward Test on the Belize Domestic League, 2024–26</a></h3>
+        <p>How much should a team trust a box-score line from a small league, where seasons are short and box scores are partial? This project places lines from the Belize domestic league, three FIBA youth and regional tournaments and Spain’s third division on an estimated <b>NCAA Division I-equivalent BPM scale</b>, then shrinks each player’s short seasons toward a prior, weighted by minutes. Only the domestic next-season prediction was tested.</p>
+        <div class="finding"><b>Result:</b> walk-forward on 102 player-seasons from 55 players, the rating’s RMSE was <b>2.24</b> against <b>3.35</b> for raw prior-season averages. Against the average of covered players (2.60) the gain was <b>not distinguishable from zero</b>.</div>
+        <div class="tags"><span class="tag">Walk-forward test</span><span class="tag">Shrinkage toward a prior</span><span class="tag">Translation offsets</span><span class="tag alt">Names anonymized</span></div>
+        <footer><a class="read-link" href="gunster-small-league-player-ratings.pdf" target="_blank" rel="noopener">Read the full report (PDF) →<span class="vh"> Rating Players from Small Leagues: A Walk-Forward Test on the Belize Domestic League, 2024–26</span></a><span class="note">12 pages</span></footer>
+      </div>
+      <div class="side">
+        <figure class="ci" style="--zero:16.667%"><figcaption>Gain over each baseline, BPM (95% interval)</figcaption><div class="ci-row hl"><div class="bl"><span>Raw prior-season average</span><b>+1.11 <em>+0.1 to +2.2</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:20.000%;width:70.000%"></span><span class="ci-dot" style="left:53.667%"></span></div></div><div class="ci-row hl"><div class="bl"><span>Last prior season</span><b>+1.15 <em>+0.3 to +2.1</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:26.667%;width:60.000%"></span><span class="ci-dot" style="left:55.000%"></span></div></div><div class="ci-row hl"><div class="bl"><span>Average of covered players</span><b>+0.36 <em>−0.1 to +0.9</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:13.333%;width:33.333%"></span><span class="ci-dot" style="left:28.667%"></span></div></div><div class="ci-row hl"><div class="bl"><span>50/50 blend</span><b>+0.04 <em>−0.4 to +0.5</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:3.333%;width:30.000%"></span><span class="ci-dot" style="left:18.000%"></span></div></div><div class="ci-axis" aria-hidden="true"><span class="first" style="left:0.000%">−0.5</span><span class="" style="left:16.667%">0</span><span class="" style="left:33.333%">0.5</span><span class="" style="left:50.000%">1.0</span><span class="" style="left:66.667%">1.5</span><span class="" style="left:83.333%">2.0</span><span class="last" style="left:100.000%">2.5</span></div><p class="note">Right of zero means the shrunk rating predicted next season better. Most of the gain over raw averages is regression to the mean. Predictions run 1.29 BPM low on average, the translation offsets rest on 4 to 19 players each and were not tested, and the test was exploratory, not pre-registered. From Table 2 of the paper.</p></figure>
+      </div>
+    </article>
+
+    <article class="card" id="college-development" data-cat="draft evaluation">
+      <div class="kicker">NBA Draft · Pre-registered · Oct 2026, rev. Oct 22</div>
+      <h3><a href="gunster-college-development-nba-value.pdf" target="_blank" rel="noopener">Does College Development Predict NBA Value?</a></h3>
+      <p>Does how a player improves in college tell a team anything beyond his final season and the consensus big board? The test was frozen on <b>August 10, 2026, before any NBA outcome was joined</b>: 17 development features, walk-forward on the 2014–21 classes, and a bar set in advance.</p>
+      <div class="finding"><b>Result: neither model met the bar.</b> Development changed the Spearman correlation with 4-year VORP by +0.01 with gradient boosting and +0.02 with an elastic net, higher in only 4 of 8 classes. The consensus board alone (0.46) ranked prospects as well as the best model (0.47).</div>
+      <figure class="ci nozero" style="--zero:0%"><figcaption>Mean Spearman with 4-year VORP, elastic net (95% interval)</figcaption><div class="ci-row "><div class="bl"><span>Statistics only</span><b>0.40 <em>0.32 to 0.49</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:30.000%;width:42.500%"></span><span class="ci-dot" style="left:50.000%"></span></div></div><div class="ci-row hl"><div class="bl"><span>Statistics + development</span><b>0.42 <em>0.38 to 0.47</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:45.000%;width:22.500%"></span><span class="ci-dot" style="left:55.000%"></span></div></div><div class="ci-row "><div class="bl"><span>Statistics + consensus rank</span><b>0.47 <em>0.40 to 0.53</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:50.000%;width:32.500%"></span><span class="ci-dot" style="left:67.500%"></span></div></div><div class="ci-row navy"><div class="bl"><span>Consensus rank alone</span><b>0.46 <em>0.39 to 0.53</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:47.500%;width:35.000%"></span><span class="ci-dot" style="left:65.000%"></span></div></div><div class="ci-axis" aria-hidden="true"><span class="first" style="left:0.000%">0.2</span><span class="" style="left:25.000%">0.3</span><span class="" style="left:50.000%">0.4</span><span class="" style="left:75.000%">0.5</span><span class="last" style="left:100.000%">0.6</span></div><p class="note">Classes 2014–21, each predicted by models trained only on earlier classes. Higher is better. From Table 2 of the paper.</p></figure>
+      <div class="tags"><span class="tag">Pre-registered</span><span class="tag">Walk-forward</span><span class="tag alt">Prospects with 2+ D-I seasons</span></div>
+      <footer><a class="read-link" href="gunster-college-development-nba-value.pdf" target="_blank" rel="noopener">Read the full report (PDF) →<span class="vh"> Does College Development Predict NBA Value? A Pre-Registered Walk-Forward Test on the 2014–21 Draft Classes</span></a><span class="note">10 pages</span></footer>
+    </article>
+
+    <article class="card" id="nba-cup" data-cat="forecast">
+      <div class="kicker">Forecasting · Simulator · Oct 2026, rev. Oct 23</div>
+      <h3><a href="gunster-nba-cup-group-play.pdf" target="_blank" rel="noopener">How Predictable Is NBA Cup Group Play?</a></h3>
+      <p>A simulator that turns preseason win totals into team ratings and plays every group under the <b>official Cup tiebreak rules</b>. It reproduces the official 2023–25 results exactly: <b>60 of 60 placements, 16 of 16 seeds and 12 of 12 quarterfinal pairings</b>.</p>
+      <div class="finding"><b>Result:</b> in a walk-forward backtest of 18 groups, its group-winner forecasts <b>tied the pre-tournament market consensus</b> (log loss 1.359 against 1.370), and its log loss was 15.5% lower than a uniform 1-in-5 guess. The <b>2026 forecast was frozen on October 14</b> and will be graded once group play ends on November 27.</div>
+      <figure class="ci" style="--zero:40.000%"><figcaption>Skill over a uniform 1-in-5 guess, % (90% interval)</figcaption><div class="ci-row hl"><div class="bl"><span>Simulator</span><b>+15.5% <em>+3.9 to +27.2</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:47.800%;width:46.600%"></span><span class="ci-dot" style="left:71.000%"></span></div></div><div class="ci-row "><div class="bl"><span>Market consensus</span><b>+14.9% <em>+1.6 to +28.0</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:43.200%;width:52.800%"></span><span class="ci-dot" style="left:69.800%"></span></div></div><div class="ci-row "><div class="bl"><span>Prior-season SRS</span><b>+2.0% <em>−17.6 to +20.6</em></b></div><div class="ci-track" aria-hidden="true"><span class="ci-band" style="left:4.800%;width:76.400%"></span><span class="ci-dot" style="left:44.000%"></span></div></div><div class="ci-axis" aria-hidden="true"><span class="first" style="left:0.000%">−20</span><span class="" style="left:20.000%">−10</span><span class="" style="left:40.000%">0</span><span class="" style="left:60.000%">10</span><span class="" style="left:80.000%">20</span><span class="last" style="left:100.000%">30</span></div><p class="note">How much lower each forecast’s log loss was than a uniform guess over the 18 groups of 2023–25. Zero is guessing. From Figure 1A of the paper.</p></figure>
+      <div class="tags"><span class="tag">Rules-exact simulation</span><span class="tag">Walk-forward backtest</span><span class="tag alt">2026 forecast graded after Nov 27</span></div>
+      <footer><a class="read-link" href="gunster-nba-cup-group-play.pdf" target="_blank" rel="noopener">Read the full report (PDF) →<span class="vh"> How Predictable Is NBA Cup Group Play? A Rules-Exact Simulator, a 2023–25 Backtest, and Two Studies of Early-Season Margins</span></a><span class="note">11 pages</span></footer>
+    </article>
+  </div>
+</section>
+
+<section id="archive" aria-labelledby="archive-h">
+  <div class="sec-head"><h2 id="archive-h">More research</h2><p>Two more papers from 2026, revised after the same October data check.</p></div>
+  <div class="archive">
+    <article class="row-card" id="top-10-picks" data-cat="draft">
+      <div>
+        <h3>What Separates Top-10 Picks? Public Pre-Draft Information and the NBA Draft, 2008–2025</h3>
+        <p>Among <b>1,073 drafted players</b>, a logistic regression on public pre-draft information separates top-10 picks from picks 11–60 with <b>AUC 0.865</b>, against 0.775 for age alone. Age is the strongest signal: 39.4% of draftees aged 19.5 or younger went in the top 10, against 2.6% of those older than 22.5. Once a post-combine mock draft is known, the model <b>adds nothing measurable</b>.</p>
+        <div class="tags"><span class="tag">Logistic regression</span><span class="tag">Leave-one-draft-out</span><span class="tag alt">Oct 2026, rev. Oct 22</span><span class="tag alt">9 pages</span></div>
+      </div>
+      <a class="btn" href="gunster-top-10-picks.pdf" target="_blank" rel="noopener">PDF →<span class="vh"> What Separates Top-10 Picks? Public Pre-Draft Information and the NBA Draft, 2008–2025</span></a>
+    </article>
+    <article class="row-card" id="late-game-shooting" data-cat="ingame">
+      <div>
+        <h3>How Much Late-Game Shooting Carries Over? NBA Play-by-Play, 2012–26</h3>
+        <p>Using win-probability leverage splits and play-by-play from <b>13,508 games</b>, late-game shot volume measured against role carries over modestly from one season to the next (<b>r = 0.29</b>), well below the 0.85 of ordinary shot volume. Late-game accuracy shows <b>no detectable carryover</b>, and free-throw percentage in high-leverage moments runs <b>1.20 points below</b> each shooter’s own normal rate.</p>
+        <div class="tags"><span class="tag">Win-probability leverage</span><span class="tag">Play-by-play</span><span class="tag alt">Oct 2026, rev. Oct 23</span><span class="tag alt">12 pages</span></div>
+      </div>
+      <a class="btn" href="gunster-late-game-shooting.pdf" target="_blank" rel="noopener">PDF →<span class="vh"> How Much Late-Game Shooting Carries Over? Shot Volume, Accuracy and Free Throws in NBA Play-by-Play, 2012–26</span></a>
+    </article>
+  </div>
+
+</section>
+
+
+<section id="reports" aria-labelledby="reports-h">
+  <div class="sec-head"><h2 id="reports-h">Practice reports</h2><p>Syracuse Women’s Basketball. Player names are removed from these public copies.</p></div>
+  <p class="intro">As the program’s analytics intern I collected KINEXON wearable data at practices and built a report for the coaching staff in R. Each report ranks the roster on distance, speed as a share of max, max speed, total exertions and mechanical intensity, with the team average marked, and compares accel, mechanical and physio load.</p>
+  <div class="grid reports">
+    <figure class="card report">
+      <a class="shot" href="syracuse-wbb-practice-report-oct-20.pdf" target="_blank" rel="noopener"><img src="report-oct-20-distance.webp" width="1280" height="720" alt="Bar chart of distance traveled in miles by each of 15 players at the October 20 practice, sorted from 0.54 to 5.18 miles, with the team average as a dotted line. Player names removed."></a>
+      <figcaption>
+        <div class="kicker">October 20 practice · 7 slides</div>
+        <p>Distance traveled by each player, with the team average as a dotted line.</p>
+        <a class="read-link" href="syracuse-wbb-practice-report-oct-20.pdf" target="_blank" rel="noopener">Open the report (PDF) →</a>
+      </figcaption>
+    </figure>
+    <figure class="card report">
+      <a class="shot" href="syracuse-wbb-practice-report-jan-23.pdf" target="_blank" rel="noopener"><img src="report-jan-23-load.webp" width="1280" height="720" alt="Grouped bar chart of accel load, mechanical load and physio load for each of 15 players at the January 23 practice. Player names removed."></a>
+      <figcaption>
+        <div class="kicker">January 23 practice · 7 slides</div>
+        <p>Accel, mechanical and physio load for each player.</p>
+        <a class="read-link" href="syracuse-wbb-practice-report-jan-23.pdf" target="_blank" rel="noopener">Open the report (PDF) →</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<section id="experience" aria-labelledby="experience-h">
+  <div class="sec-head"><h2 id="experience-h">Experience</h2><p>Described in general terms. The only team data on this page is the name-free practice reports.</p></div>
+  <div class="exp">
+    <div class="exp-item"><div class="when">Sep 2025 to Mar 2026</div><h3>Basketball Analytics Intern</h3><div class="org">Syracuse University Women’s Basketball</div><p>Collected KINEXON wearable tracking data at daily practices for the Division I program and built charts in R for load management, performance monitoring, return-to-play decisions and game analysis, delivered to the coaching staff.</p></div>
+    <div class="exp-item"><div class="when">May to Aug 2026</div><h3>Sports Data Science Intern</h3><div class="org">Big League Advantage, Washington, D.C.</div><p>Evaluated data on 20,000+ athlete prospects, focused on baseball, with Python, machine learning and predictive models for a firm that gives athletes upfront capital in exchange for a share of their future earnings. Deduplicated a large player database in the firm’s Python, AWS and GitHub environment.</p></div>
+    <div class="exp-item"><div class="when">Jul to Aug 2026</div><h3>Intern, 2026 Commonwealth Games</h3><div class="org">Belize Olympic and Commonwealth Games Association, Glasgow</div><p>Evaluation research across athletics, track cycling and swimming, and meetings with athletes during the Games. Now providing volunteer analytics support for Belize’s national athletics program through the LA28 cycle, including an LA28 qualification tracker and a framework for identifying Belize-eligible athletes abroad. The small-league ratings paper is a separate, independent project.</p></div>
+    <div class="exp-item"><div class="when">Nov 20–21, 2026 · Selected</div><h3>ASU NBA Trade Deadline Competition</h3><div class="org">Representing Syracuse and Falk College of Sport, Phoenix, Arizona</div><p>Teams evaluate an assigned NBA franchise, set its trade-deadline goals, negotiate trades that must comply with the collective bargaining agreement, support them with analytics, scouting and salary-cap analysis, and present to NBA executives.</p></div>
+    <div class="exp-item"><div class="when">Spring 2027 · Selected</div><h3>Student Consultant, Football in Italy</h3><div class="org">Syracuse University</div><p>Selected for a competitive, semester-long consulting program advising Syracuse alumnus and former NFL offensive lineman Justin Pugh on building American football in Italy. The program will cover market research and stakeholder interviews in Florence, Bologna and Rome, apparel and sponsorship strategy, NFL Global Markets and sports diplomacy, and will end with a final report and presentation to the client and partners.</p></div>
+  </div>
+</section>
+
+
+<section id="skills" aria-labelledby="skills-h">
+  <div class="sec-head"><h2 id="skills-h">Skills and coursework</h2></div>
+  <div class="skills">
+    <div class="skill-box"><h3>Programming and tools</h3><ul><li>Python, R, SQL</li><li>GitHub</li><li>Tableau, Excel, PowerPoint, Word</li><li>KINEXON live player tracking</li><li>Machine learning and predictive modeling</li><li>Statistical analysis and data visualization</li><li>Spanish (proficient)</li></ul></div>
+    <div class="skill-box"><h3>Methods in the papers</h3><ul><li>Walk-forward and leave-one-out validation</li><li>Pre-registered tests</li><li>Bootstrap intervals</li><li>Shrinkage estimation</li><li>Logistic regression, gradient boosting, elastic net</li><li>Monte Carlo simulation</li><li>Fixed-effects regression</li></ul></div>
+    <div class="skill-box"><h3>Coursework</h3><ul><li>Statistics I and II</li><li>Advanced Python for Sport Analytics</li><li>Database and Programming (SQL) for Sport Analytics</li><li>R for Sport Analytics</li><li>Sport Data Analysis</li><li>Exploring AI; Building Human-Centered AI Applications</li></ul></div>
+    <div class="skill-box"><h3>Business and communication</h3><ul><li>Principles of Sport Management</li><li>Sport Economics</li><li>Finance</li><li>Accounting</li><li>Presentational Speaking</li><li>Microeconomics</li><li>Game Theory and Economic Strategy</li></ul></div>
+  </div>
+</section>
+
+
+<section id="contact" aria-labelledby="contact-h">
+  <div class="sec-head"><h2 id="contact-h">Contact</h2><p>LinkedIn is the best way to reach me.</p></div>
+  <div class="exp-item contact">
+    <h3>LinkedIn</h3>
+    <p><a href="https://www.linkedin.com/in/william-gunster/" target="_blank" rel="me noopener">linkedin.com/in/william-gunster</a></p>
+  </div>
+</section>
+
+</main>
+</div>
+
+<footer class="site"><div class="wrap">
+  <span><strong>Will Gunster</strong> · B.S. Sport Analytics, Syracuse University, May 2028 · Minor in Applications of AI · Updated October 2026</span>
+  <span><a href="#research">Research</a> · <a href="#experience">Experience</a> · <a href="https://www.linkedin.com/in/william-gunster/" target="_blank" rel="me noopener">LinkedIn</a></span>
+</div></footer>
+
+
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chip');
+  var items=document.querySelectorAll('[data-cat]');
+  chips.forEach(function(chip){
+    chip.addEventListener('click',function(){
+      chips.forEach(function(c){c.setAttribute('aria-pressed','false');});
+      chip.setAttribute('aria-pressed','true');
+      var f=chip.getAttribute('data-filter');
+      items.forEach(function(el){
+        var cats=(el.getAttribute('data-cat')||'').split(' ');
+        el.classList.toggle('hidden', !(f==='all'||cats.indexOf(f)>-1));
+      });
+    });
+  });
+})();
+</script>
+
+
+</body>
+</html>
